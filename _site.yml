@@ -11,3 +11,4 @@ output:
     theme: cosmo         # https://bookdown.org/yihui/rmarkdown/
     highlight: textmate  #   html-document.html#appearance-and-style
     css: styles.css      # Create your own custom CSS file
+output_dir: "docs"
