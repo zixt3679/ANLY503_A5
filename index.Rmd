@@ -7,13 +7,13 @@ The first things I need to do is to develop my own dataset. To find the similar 
 
 
 
-![TrellisEnt](/D:/2021Fall/503visualization/eco/TrellisAEnt.html){#id .class width=800 height=400px}
-![Area_ent](/D:/2021Fall/503visualization/eco/area_ent.html){#id .class width=800 height=400px}
+![TrellisEnt](TrellisAEnt.html){#id .class width=800 height=400px}
+![Area_ent](area_ent.html){#id .class width=800 height=400px}
 
 These two images show the total consumption for each household in the first week. One for Fridge and one for entertainment. The areas in each image shows the amount of electricity consumption for each household so that we can simply compare the area to know who contributes most. For fridge, household 5 is apparently main consumer and household 6 consumes far less than 5. It does make sense that fridge's electricity consumption is usually stable based on common sense. Even for the main consumer, the edge of household 6 shows slow increases or decreases. But the situation seems to reverse in entertainment part. Rather than being a stable consumer, household 4 largely increases the specific consumption after 8 pm while other two households decreases this consumption. We could further the search to find similarities.
 
-![ruled_fri](/D:/2021Fall/503visualization/eco/ruledForlinesfri.html){#id .class width=800 height=400px}
-![ruled_ent](/D:/2021Fall/503visualization/eco/ruledForlinesent.html){#id .class width=800 height=400px}
+![ruled_fri](ruledForlinesfri.html){#id .class width=800 height=400px}
+![ruled_ent](ruledForlinesent.html){#id .class width=800 height=400px}
 
 I simply calculated the average consumption for each appliance in each hour and set the average as a horizontal line. I want to find when each households may overly use the electricity. 
 
@@ -22,15 +22,15 @@ Now it's much easier to find similarities even for the seemly flat area for frid
 For entertainment part, all households also shows similar habits that during morning, they keep the electricity consumption at a low level and will increase this consumption after 5 pm. But household 6 drastically increases the consumption in this part during night which refers they usually use TV and stereo heavily during night.
 
 Till now, I want to find how the consumption changes as time goes by. I think fridge might be one of the best appliances to show the changing trends because weather, temperature change along with time changes. I firstly plot two lines that one for the average consumption in one week and another for just a daily consumption of that week. Even though the values might be different and there are always some days excess the average, we could see the trends are very similar.
-![OneDayinOneWeek](/D:/2021Fall/503visualization/eco/OneDayinOneWeek.html){#id .class width=1200 height=400px}
+![OneDayinOneWeek](OneDayinOneWeek.html){#id .class width=1200 height=400px}
 
 Based on this, I just selected the data of the last day of each month to be the data of the month, since we just want to talk about trends rather than exact values.
 
-![LastDayinEachMonth](/D:/2021Fall/503visualization/eco/LastDayinEachMonth.html){#id .class width=1200 height=400px}
+![LastDayinEachMonth](LastDayinEachMonth.html){#id .class width=1200 height=400px}
 
 But things got stunned that this image is too messy to make analysis. To solve this, I realized season is better to understand and powerful to show the time changes including such weather and temperature aspects. So I set summer from June to August, and Fall from September to November, and of course winter from December to January, then took average of each season. We could get a much more clear interactive image.
 
-![Seasons](/D:/2021Fall/503visualization/eco/Seasons.html){#id .class width=1200 height=400px}
+![Seasons](Seasons.html){#id .class width=1200 height=400px}
 
 From above image, it's not hard to know that during season changes, average electricity consumption will decrease. Moreover, if we focus our search on each single day, we could find in winter, electricity consumption of fridge will decrease when time increase. The peak consumption will be reached earlier as well. In summer, the peak consumption is noon, while keep left shifting to 9 am in fall and even reach 7 am during winter. The relative peaks are usually smaller during time changes even they are still at a roughly same time in each season.
 
